@@ -57,13 +57,15 @@ nav a {
   margin: auto;
   position: relative;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
   max-width: 350px;
   top: -180px;
   padding: 0px 15px;
 }
-.intro-content_container > * {
-  margin-bottom: 20px;
-}
+
 .intro h1 {
   color: var(--secondary-color);
   font-size: 2.18em;
@@ -85,7 +87,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 152px;
+  width: 152px;
   height: 40px;
   background: var(--quaternary-color);
   color: var(--primary-color);
@@ -193,10 +195,6 @@ nav a {
 .contact-container > * {
   margin: 20px 0px;
 }
-/* .contact-container a {
-  height: 48px;
-  width: 50px;
-} */
 
 .contact-container p:nth-of-type(2) {
   font-weight: bold;
