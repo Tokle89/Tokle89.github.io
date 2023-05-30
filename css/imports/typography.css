@@ -8,6 +8,14 @@ h4,
 a {
   font-family: var(--font-heading), Georgia, "Times New Roman", Times, serif;
 }
+h1,
+h2 {
+  font-size: 1.55em;
+}
+h3,
+h4 {
+  font-size: 1.25em;
+}
 p {
   font-size: 0.93em;
 }
