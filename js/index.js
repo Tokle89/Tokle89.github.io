@@ -37,7 +37,7 @@ const animationH1 = () => {
   if (i < text.length) {
     introH1.innerHTML += text.charAt(i);
     i++;
-    setTimeout(animationH1, 70);
+    setTimeout(animationH1, 75);
   }
 };
 

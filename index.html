@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <script type="module" src="js/index.js"></script>
+    <script defer src="js/index.js"></script>
     <title>Fredrik`s Portfolio</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="text-align">
         <a href="index.html">Home</a>
         <a href="index.html#about">About Me</a>
         <a href="index.html#projects">Projects</a>
@@ -25,9 +25,9 @@
     <main>
       <section class="intro">
         <div class="green-container"></div>
-        <div class="intro-content_container">
+        <div class="intro-content_container text-align">
           <img src="images/profile.jpg" alt="portrait of Fredrik tokle" />
-          <div id="intro-text">
+          <div class="flex flex-col" id="intro-text">
             <h1 class="logo"></h1>
             <p id="intro-p"></p>
             <a href="index.html#about" class="cta" id="intro-cta"> View More</a>
@@ -53,7 +53,7 @@
         <p>Thank you for taking the time to learn a little bit about me.</p>
         <div class="skills-container">
           <h3>My skills and tools:</h3>
-          <div class="icon-container">
+          <div class="icon-container flex">
             <img src="images/adobe.svg" alt="adobe xd" class="skill-icon" />
             <img src="images/vscode.svg" alt="visual studio code" class="skill-icon" />
             <img src="images/github.svg" alt="github" class="skill-icon" />
@@ -64,44 +64,44 @@
           </div>
         </div>
       </section>
-      <section class="projects" id="projects">
+      <section class="projects text-align" id="projects">
         <h2>My projects:</h2>
-        <div class="cards-container">
-          <div class="card">
+        <div class="cards-container flex">
+          <div class="card flex flex-col">
             <img src="images/rainy-days.jpg" alt="Rainy days web site" class="card-img" />
             <h3>Rainy days</h3>
             <a href="https://github.com/Tokle89/cross-course-project-Tokle89" class="cta">Github</a>
             <a href="https://elaborate-platypus-596ec8.netlify.app" class="cta">Live site</a>
             <div class="card_skills-container">
               <h4>Built with:</h4>
-              <div class="icon-container">
+              <div class="icon-container flex">
                 <img src="images/html.svg" alt="html" class="skill-icon" />
                 <img src="images/css.svg" alt="css" class="skill-icon" />
                 <img src="images/javascript.svg" alt="javascript" class="skill-icon" />
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card text-align flex flex-col">
             <img src="images/Community-Science.jpg" alt="Rainy days web site" class="card-img" />
             <h3>Community Science Museum</h3>
             <a href="https://github.com/Tokle89/2022-03-30_semesterproject1_Fredrik-Tokle" class="cta">Github</a>
             <a href="https://elegant-blini-19eef4.netlify.app" class="cta">Live site</a>
             <div class="card_skills-container">
               <h4>Built with:</h4>
-              <div class="icon-container">
+              <div class="icon-container flex">
                 <img src="images/html.svg" alt="html" class="skill-icon" />
                 <img src="images/css.svg" alt="css" class="skill-icon" />
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card text-align flex flex-col">
             <img src="images/healthy-life.jpg" alt="Rainy days web site" class="card-img" />
             <h3>Healthy Life blog</h3>
             <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Tokle89" class="cta">Github</a>
             <a href="https://storied-brioche-d4852c.netlify.app" class="cta">Live site</a>
             <div class="card_skills-container">
               <h4>Built with:</h4>
-              <div class="icon-container">
+              <div class="icon-container flex">
                 <img src="images/html.svg" alt="html" class="skill-icon" />
                 <img src="images/css.svg" alt="css" class="skill-icon" />
                 <img src="images/javascript.svg" alt="javascript" class="skill-icon" />
@@ -110,16 +110,16 @@
           </div>
         </div>
       </section>
-      <section class="contact" id="contact">
-        <h2>Get in touch</h2>
-        <div class="contact-container">
+      <section class="contact flex flex-col" id="contact">
+        <h2 class="text-align">Get in touch</h2>
+        <div class="contact-container flex flex-col">
           <h3>Lets connect</h3>
           <p>
             If you're looking for a dedicated front-end developer who is passionate about their craft and committed to delivering exceptional results, I'd love
             to connect with you. Feel free to reach out through Linkedin or trough email
           </p>
           <p>Thank you for taking the time to visit my Portfolio page. Let's build amazing digital experiences together!</p>
-          <div class="contact-cta_container">
+          <div class="contact-cta_container flex flex-col">
             <a href="https://www.linkedin.com/in/fredrik-tokle-0994a023b" class="cta"
               ><img src="images/linkedin.png" alt="linkedin" class="linkedin-icon" /> Linkedin</a
             >
