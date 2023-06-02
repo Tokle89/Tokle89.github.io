@@ -100,7 +100,7 @@ nav a {
 /* intro  */
 .green-container {
   background: var(--secondary-color);
-  min-height: 400px;
+  min-height: 280px;
 }
 .intro-content_container {
   position: relative;
