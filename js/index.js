@@ -26,13 +26,13 @@ const startAnimation = () => {
   setTimeout(animationP, 1500);
   setTimeout(() => {
     const cta = document.querySelector("#intro-cta");
-    cta.style.transition = "5s";
+    cta.style.transition = "0.5s";
     cta.style.opacity = "100%";
   }, 5350);
 };
 
 const animationH1 = () => {
-  const text = `My portfolio`;
+  const text = `Frontend Developer`;
 
   if (i < text.length) {
     introH1.innerHTML += text.charAt(i);
@@ -43,7 +43,7 @@ const animationH1 = () => {
 
 const animationP = () => {
   const text = `Hello! My Name is Fredrik Tokle. 
-               I am a Frontend Development Student`;
+               Welcome to my portfolio`;
   if (x < text.length) {
     introP.innerHTML += text.charAt(x);
     x++;

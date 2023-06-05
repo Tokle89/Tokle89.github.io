@@ -18,10 +18,6 @@
   .contact-cta_container {
     flex-direction: row;
   }
-
-  .contact {
-    max-width: 550px;
-  }
 }
 
 @media (min-width: 900px) {
@@ -38,11 +34,17 @@
     font-size: 1.1em;
   }
   .intro-content_container,
-  .about,
-  .contact {
+  .about {
     max-width: 700px;
   }
-
+  .intro,
+  .projects,
+  .about {
+    min-height: 100vh;
+  }
+  .about-container {
+    margin-top: 50px;
+  }
   .intro h1 {
     font-size: 3.75em;
   }
