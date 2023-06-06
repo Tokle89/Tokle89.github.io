@@ -276,11 +276,15 @@ footer div {
   width: 25px;
   margin-right: 5px;
 }
-.contact .cta:hover {
+.contact-cta_container .cta:hover {
   box-shadow: 0px 3px 4px 2px var(--primary-color);
 }
-.contact .cta {
+.contact-cta_container .cta {
   margin-top: 20px;
   background-color: var(--tertiary-color);
   border: 1px solid var(--primary-color);
+}
+
+footer .contact-cta_container {
+  gap: 20px;
 }
