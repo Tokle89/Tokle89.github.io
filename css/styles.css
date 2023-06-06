@@ -262,7 +262,6 @@ footer div {
 .contact-container {
   color: var(--primary-color);
   max-width: 550px;
-  margin: 20px;
   padding: 15px 25px;
   border-radius: 5px;
 }
