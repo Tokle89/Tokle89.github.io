@@ -1,5 +1,6 @@
 @import "imports/variables.css";
 @import "imports/typography.css";
+@import "imports/links.css";
 *,
 *::before,
 *::after {
@@ -12,9 +13,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-a {
-  text-decoration: none;
-}
+
 img {
   width: 100%;
   object-fit: cover;
@@ -28,35 +27,14 @@ img {
 .flex-col {
   flex-direction: column;
 }
+.flex-align {
+  align-items: center;
+}
 .skill-icon {
   height: 45px;
   width: 45px;
 }
 
-.cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 152px;
-  height: 40px;
-  background: var(--quaternary-color);
-  color: var(--primary-color);
-  border: 2px solid var(--quaternary-color);
-  transition: all ease-in 0.2s;
-}
-.cta:hover {
-  box-shadow: 0px 3px 4px 2px #221c46;
-}
-
-.contact,
-.contact-cta_container {
-  justify-content: center;
-}
-.intro-content_container div,
-.card,
-.contact-cta_container {
-  align-items: center;
-}
 .intro-content_container,
 .about {
   margin: auto;
@@ -66,15 +44,22 @@ img {
 .cards-container {
   flex-wrap: wrap;
 }
+header,
+nav,
+footer,
+.green-container {
+  background: var(--tertiary-color);
+}
+
 /* header  */
 header,
 nav {
   position: fixed;
   width: 100%;
-  background: var(--tertiary-color);
 }
 header {
   z-index: 1000;
+  text-align: right;
 }
 nav {
   transform: translateX(100%);
@@ -92,51 +77,37 @@ nav a {
 .hamburger {
   font-size: 4em;
   font-weight: bold;
-  color: var(--primary-color);
   cursor: pointer;
   padding-right: 15px;
 }
+.hamburger,
+footer {
+  color: var(--primary-color);
+}
+
+/* footer  */
 footer {
   padding: 30px 10px;
-  background: var(--tertiary-color);
-  color: var(--primary-color);
-  text-align: center;
-  gap: 100px;
 }
-footer img {
-  width: 18px;
-  margin: 0px 5px 0px 0px;
-}
+
 footer h2 {
   margin-bottom: 10px;
   font-weight: 100;
 }
-footer a {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-}
-footer div {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+
+footer .contact-cta_container {
+  gap: 20px;
 }
 
 /* intro  */
 .green-container {
-  background: var(--tertiary-color);
   min-height: 280px;
 }
 .intro-content_container {
   position: relative;
-  gap: 20px;
-  max-width: 350px;
   height: 470px;
   top: -180px;
   padding: 0px 15px;
-}
-.intro-content_container div {
-  min-height: 200px;
 }
 .intro img {
   border-radius: 100%;
@@ -199,7 +170,7 @@ footer div {
 .projects {
   background: var(--tertiary-color);
   color: var(--primary-color);
-  margin: 30px auto;
+  margin: 30px 0;
   padding: 50px 15px;
 }
 .projects h2 {
@@ -229,7 +200,6 @@ footer div {
 
 .card h3 {
   font-size: 1.55em;
-  margin: 0px;
   min-height: 60px;
 }
 .card_skills-container {
@@ -244,13 +214,14 @@ footer div {
   justify-content: start;
 }
 /* contact  */
-
+.contact,
+.blue-cta_container {
+  justify-content: center;
+}
 .contact {
   padding: 100px 0px;
-  width: 100%;
   min-height: 80vh;
   background: #1e3944;
-  align-items: center;
 }
 
 .contact h2 {
@@ -266,25 +237,4 @@ footer div {
 }
 .contact-container > * {
   margin: 20px 0px;
-}
-
-.contact-cta_container {
-  gap: 50px;
-}
-.contact-cta_container img {
-  height: 25px;
-  width: 25px;
-  margin-right: 5px;
-}
-.contact-cta_container .cta:hover {
-  box-shadow: 0px 3px 4px 2px var(--primary-color);
-}
-.contact-cta_container .cta {
-  margin-top: 20px;
-  background-color: var(--tertiary-color);
-  border: 1px solid var(--primary-color);
-}
-
-footer .contact-cta_container {
-  gap: 20px;
 }
